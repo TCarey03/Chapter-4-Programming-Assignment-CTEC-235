@@ -21,3 +21,15 @@ The most challenging part was making sure there was enough space between the ima
 I also used a Container to group the contact information together and give it a background color. The Row allowed me to put the email label and email address next to each other.
 
 When I test the app on different screen sizes, the amount of available space changes. A layout that looks good on a larger screen can become more crowded on a smaller screen. Using padding and spacing helps keep the layout organized.
+
+------------------------------
+
+Phase 3
+
+What are the benefits of breaking a large widget tree down into smaller, individual StatelessWidget classes? How did doing this change the readability of your code?
+
+Breaking the widget tree into smaller StatelessWidget classes makes the code easier to read and understand. Instead of having everything inside one large build method, each widget has a specific purpose.
+
+I created a ProfileHeader widget for the image, name, and subtitle. I also created an InfoCard widget for displaying information such as the email address.
+
+The InfoCard can be reused with different values, which prevents me from having to write the same layout code multiple times. Overall, breaking the code into smaller widgets made the main build method shorter and easier to understand.
